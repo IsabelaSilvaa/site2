@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+  <html>
+    <head>
+	  <title>Isabela Silva</title>
+	  <link rel="stylesheet" type="text/css" a href="CSS\arquivo.css">
+	  <style>
+	    @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+  html{
+    height: 100%;
+	overflow: hidden;	
+  }
+  body{
+    margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family:Nerko One;
+	perspective: 1px;
+	transform-style: preserve-3d;
+	overflow-y:scroll;
+	overflow-x:hidden;
+  }
+  
+   h1{
+    font-size: 250%;
+   }
+   p{
+	font-size: 140%;
+    line-height: 150%;
+    color: #333;	
+   }
+   
+   .slide{
+	   position:relative;
+	   padding: 25vh 10%;
+	   min-height:100vh;
+	   width: 100vw;
+	   box-sizing: border-box;
+	   box-shadow: 0 -1px 10px rgba( 0, 0, 0, .7);
+	   transform-style: inherit;   
+   }
+   .img1{
+	   position: absolute;
+	   top: 50%;
+	   left: 35%;
+	   width: 220px;
+	   height: 240px;
+	   transform: translateZ(.25px) scale (.75px) translateX(-94%) translateY(-100%) rotate(2deg);
+       padding: 10px;
+	   border-radius: 5px;
+	   background: rgba ( 240,230,220, .7);
+	   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+   }
+    
+	.img2{
+	  
+	   top: 50%;
+	   left: 35%;
+	   width: 420px;
+	   height: 240px;
+	   transform: translateZ(.25px) scale (.75px) translateX(-94%) translateY(-100%) rotate(-2deg);
+       padding: 10px;
+	   border-radius: 5px;
+	   background: rgba ( 240,230,220, .7);
+	   box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+   }
+   
+   img:last-of-type{
+	 transform: translateZ(.4px) scale (.6px) translateX(-104%) translateY(-40%) rotate(-5deg); 
+   }
+   
+   .slide::before{
+	content:"";
+    position: absolute;
+    top: 0;
+   	bottom: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 8px 1px rgba (0, 0, 0, .7);	
+   }
+   
+   .title{
+	   width : 50%;
+	   padding: 5%;
+	   border-radius: 5px;
+	   background: rgba(240,230,220, .7);
+	   box-shadow: 0 0 8px rgba( 0, 0, 0, .70;
+   }
+   
+   .slide: nth-child(2n) .title{
+	   margin-left: 0;
+	   margin-right: auto;
+   }   
+   
+    .slide: nth-child(2n+1) .title{
+	   margin-left: auto;
+	   margin-right: 0;
+   }   
+   
+   .slide, .slide::before{
+	background:50% 50% /cover;	
+   }
+   
+   .header {
+	   text-align: center;
+	   font-size: 175%;
+	   color: #FFF;
+	   text-shadow: 0 2px 2px #000;
+   }
+   
+   #title{
+	background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fbr.depositphotos.com%2Fstock-photos%2Fgal%25C3%25A1xia.html&psig=AOvVaw30CbnoTr52nyzL17ky8CRF&ust=1607007288452000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCKC5jebGr-0CFQAAAAAdAAAAABAR);
+    z-index: 2;
+    	
+   }
+   
+   #title h1 {
+    transform: translateZ(.25px) scale(.75);
+    transform-origin:50% 100%;	
+   }
+   
+   #slide1::before {
+	background-image: url("https://lorempixel.com/640/480/abstract/4/");
+    transform: translateZ(-1px) scale(2); 	
+   }
+   
+   #slide2 {
+	background-image: url("https://lorempixel.com/640/480/abstract/5/");
+    z-index:2;	
+   }
+   
+   #slide3::before{
+	background-image: url("https://lorempixel.com/640/480/abstract/5/"); 
+    transform: translateZ(-1px) scale(2);	
+   }
+   
+   #slide4 {
+	background: #222;   
+   }
+   
+    </style>  
+	</head>
+	<body>
+	 <div id="title" class="slide header">
+	   <h1>Página oficial da Isabela</h1>
+     </div>
+	   
+	  <div id="slide1" class="slide">
+        <div class="title">
+		  <h1>Olá Gente, tudo bem com vocês?</h1>
+		  <p>Nesse site eu vou  me apresentar e  contar um pouco sobre mim.</p>
+		  <p>~Espero que gostem!</p>
+	    </div>
+	  </div>
+	
+	 <div id="slide2" class="slide">
+	  <div class="title">
+	    <h1>Para começar</h1>
+		<p>Eu sou a isabela, tenho 15 anos e moro em Hortolândia.</p>
+		<p>Na verdade eu nasci em Sumaré, morei lá até os meus 7 aninhos e depois me mudei para cá.</p>
+		<p>Moro com os meus pais e tenho um irmão </p>
+		<p>Estudo no Intituto Federal e estou cursando técnico de informática</p>
+		
+	  </div>	
+	    <img class="img1" src="isabela.png.jpg"  />
+	    <img class="img2" src="isabela2.png.jpg"  />
+	 </div>
+	
+	 <div id="slide3" class="slide">
+	  <div class="title">
+	    <h1>Algumas informações</h1>
+		<p>Nome: Isabela Silva.</p>
+		<p>Data de nascimento: 18/02/2005.</p>
+		<p>Religião: Evangélica.</p>
+		<p>Minha comida favorita: hot dog.</p>
+		<p>Estou no primeiro ano do ensino Médio.</p>
+		
+	  </div>
+	 </div>
+	
+	 <div id="slide4" class="slide header">
+	    <h1>Por enquanto é isto</h1>
+	 </div>   
+   </body>	
+  </html>

@@ -1,0 +1,38 @@
+@import url(@import url('https://fonts.googleapis.com/css2?family=Texturina:wght@500&display=swap'););
+  
+  html{
+    height: 100%;
+	overflow: hidden;	
+  }
+  body{
+    margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family:Texturina;
+	perspective: 1px;
+  }
+  
+   h1{
+    font-size: 250%;
+   }
+   p{
+	font-size: 140%;
+    line-height: 150%;
+    color: #333;	
+   }
+   
+   .slide{
+	   position:relative;
+	   padding: 25vh 10%;
+	   min-height:100vh;
+	   width: 100vw;
+	   box-sizing: border-box;
+	   box-shadow: 0 -1px 10px rgba( 0, 0, 0, .7);
+	   transform-style: inherit;   
+   }
+   .imgl{
+	   position: absolute;
+	   top: 50%
+	   left: 
+	   
+   }
